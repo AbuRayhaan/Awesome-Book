@@ -1,0 +1,17 @@
+li {
+  list-style-type: none;
+  line-height: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+}
+
+.hr {
+  height: 1px;
+  background-color: black;
+  width: 20%;
+}
