@@ -1,17 +1,69 @@
 li {
   list-style-type: none;
   line-height: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.list-border {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 3px solid black;
+  padding-left: 0;
+}
+
+.book-info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  width: 100%;
+}
+
+li button {
+  border: 3px solid black;
+  box-shadow: 3px 3px;
+}
+
+ul li:nth-child(odd) {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.hr {
+  height: 1px;
+  background-color: black;
+  width: 5%;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 30%;
 }
 
-.hr {
-  height: 1px;
-  background-color: black;
-  width: 20%;
+.form-books {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+form input,
+#add-book {
+  border: 3px solid black;
+  box-shadow: 3px 3px;
+}
+
+form input {
+  width: 180px;
 }
