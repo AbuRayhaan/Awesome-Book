@@ -1,6 +1,73 @@
-li {
+ul li {
   list-style-type: none;
   line-height: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: blue;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid black;
+  padding: 5px;
+  height: 50px;
+}
+
+.header-title {
+  margin-left: 20px;
+  font-size: 22px;
+}
+
+.header-menu {
+  display: flex;
+  margin-right: 50px;
+  gap: 1px;
+  background-color: black;
+}
+
+.header-items {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bar {
+  border-right: 0.3em solid black;
+  padding-right: 20px;
+  padding-left: 5px;
+}
+
+header ul li {
+  cursor: pointer;
+  list-style: none;
+}
+
+main {
+  height: 75vh;
+}
+
+#date {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.booklist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.booklist-container ul li {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -33,6 +100,7 @@ li {
 li button {
   border: 3px solid black;
   box-shadow: 3px 3px;
+  margin-top: 5px;
 }
 
 ul li:nth-child(odd) {
@@ -58,12 +126,89 @@ form {
   align-items: flex-end;
 }
 
-form input,
 #add-book {
   border: 3px solid black;
   box-shadow: 3px 3px;
 }
 
 form input {
+  border: 3px solid black;
   width: 180px;
+}
+
+.error-msg {
+  color: red;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.contact-container ul li {
+  list-style: disc;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.hide {
+  display: none;
+}
+
+.footer {
+  border: 3px solid black;
+  padding: 5px;
+  height: 50px;
+}
+
+.footer p {
+  font-weight: bold;
+}
+
+.footer a {
+  color: blue;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;
+    padding: 5px;
+    height: 50px;
+  }
+
+  .header-title {
+    margin-left: 20px;
+    font-size: 22px;
+  }
+
+  .header-menu {
+    display: flex;
+    margin-right: 50px;
+    gap: 50px;
+    background-color: black;
+  }
+
+  .header-items {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .bar {
+    border-right: 0.3em solid black;
+    padding-right: 41px;
+  }
+
+  header ul li {
+    cursor: pointer;
+    list-style: none;
+  }
 }
