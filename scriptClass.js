@@ -54,7 +54,7 @@ class Book {
 
 /*  DOM ELEMENTS  */
 const displayBooks = (id, title, author) => {
-  bookList.classList.add('list-border');
+  bookList.classList.add('booklist-border');
   const li = document.createElement('li');
   const removeButton = document.createElement('button');
   removeButton.textContent = 'Remove';
@@ -73,11 +73,11 @@ const displayBooks = (id, title, author) => {
     id = removeButton.id;
     book.removeBook();
     if (li.nextElementSibling === null && li.previousElementSibling === null) {
-      bookList.classList.remove('list-border');
       li.remove();
+      bookList.classList.remove('booklist-border');
     } else {
       li.remove();
-      bookList.classList.add('list-border');
+      bookList.classList.add('booklist-border');
     }
   });
 };

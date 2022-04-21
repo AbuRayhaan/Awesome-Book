@@ -38,7 +38,7 @@ To get a local copy up and running:
 
 - Github: [@Ogaga1](https://github.com/Ogaga01)
 
-- LinkedIn: [Ogaga Iyara](https://www.linkedin.com/in/hammed-adisa-mct-ccsp-ctp-b4378372/)
+- LinkedIn: [Ogaga Iyara](https://www.linkedin.com/in/ogaga-iyara-0339b0105/)
 
 ## Contributing
 
