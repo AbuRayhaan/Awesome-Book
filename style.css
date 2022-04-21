@@ -74,6 +74,10 @@ main {
   padding: 5px;
 }
 
+.booklist-border {
+  border: 3px solid black;
+}
+
 .book-container {
   display: flex;
   flex-direction: column;
@@ -85,7 +89,6 @@ main {
   display: flex;
   flex-direction: column;
   width: 50%;
-  border: 3px solid black;
   padding-left: 0;
 }
 
