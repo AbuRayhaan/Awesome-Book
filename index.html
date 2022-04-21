@@ -8,21 +8,61 @@
     <title>Favorite Books</title>
 </head>
 <body>
-    <div class="book-container">
-        <h2 class="fav-books">All awesome books</h2>
-        <ul id="books-list">
-            <!--Book List-->
-        </ul>
+    <header class="header">
+        <h1 class="header-title">Awesome Books</h1>
+        <nav>
+            <ul class="header-menu">
+                <li class="header-items"><a href="#" id="listBooks" class="bar">List</a></li>
+                <li class="header-items bar"><a href="#addBook-container" id="addBook" class="bar">Add New</a></li>
+                <li class="header-items"><a href="#contactUs-container" id="contactInfo">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="hr"></div>
-        <h2 class="fav-books">Add a new book</h2>
-        <form class="form-books">
-            <input id="bookTitle" type="text"  placeholder="Title">
-            <input id="bookAuthor" type="text" placeholder="Author">
-            <span class="error-msg"></span>
-            <button id="add-book" type ="submit">Add</button>
-        </form>
-    </div>
+    <main>
+        <section id="date"></section>
+
+        <section class="book-section">
+
+            <section class="booklist-container" id="bookList-container">
+                <h2 class="fav-books">All awesome books</h2>
+                <ul id="books-list">
+                    <!--Book List-->
+                </ul>
+            </section>
+            
+            <section class="book-container hide" id="addBook-container">
+                <h2 class="fav-books">Add a new book</h2>
+                <form class="form-books">
+                    <input id="bookTitle" type="text"  placeholder="Title">
+                    <input id="bookAuthor" type="text" placeholder="Author">
+                    <span class="error-msg"></span>
+                    <button id="add-book" type ="submit">Add</button>
+                </form>
+            </section>
+
+            <section class="contact-container hide" id="contactUs-container">
+                <h2 class="contact-header">Contact information</h2>
+                <p class="contact-info">Do you have any questions or you just want to 
+                    say "Hello"? <br> You can reach out to us!
+                </p>
+                <ul class="contact-details">
+                    <li>Our e-mail: mail@mail.com</li>
+                    <li>Our phone number: 0043586534422</li>
+                    <li>Our address: Streetname 22, 84503 City, Country</li>
+                </ul>
+            </section>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; awesome book 2022 - Some right reserved - by
+          <a target="_blank" rel="noopener" href="https://github.com/Ogaga01">Ogaga1</a> &
+          <a target="_blank" rel="noopener" href="https://github.com/AbuRayhaan">AbuRayhaan</a>
+        </p>
+    </footer>
+    
     <script src="./scriptClass.js"></script>
 </body>
 </html>
