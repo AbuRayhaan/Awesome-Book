@@ -14,7 +14,8 @@ a {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   border: 3px solid black;
   padding: 5px;
@@ -22,26 +23,24 @@ a {
 }
 
 .header-title {
-  margin-left: 20px;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .header-menu {
   display: flex;
-  margin-right: 50px;
-  gap: 1px;
+  margin-right: 5px;
+  gap: 10px;
   background-color: black;
 }
 
 .header-items {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .bar {
   border-right: 0.3em solid black;
-  padding-right: 20px;
-  padding-left: 5px;
+  padding-right: 5px;
 }
 
 header ul li {
@@ -50,7 +49,7 @@ header ul li {
 }
 
 main {
-  height: 75vh;
+  height: 80vh;
 }
 
 #date {
@@ -58,13 +57,14 @@ main {
   justify-content: flex-end;
   margin-top: 10px;
   font-weight: bold;
+  font-size: 12px;
 }
 
 .booklist-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 .booklist-container ul li {
@@ -78,17 +78,10 @@ main {
   border: 3px solid black;
 }
 
-.book-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 80px;
-}
-
 .list-border {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
   padding-left: 0;
 }
 
@@ -110,10 +103,11 @@ ul li:nth-child(odd) {
   background-color: rgba(128, 128, 128, 0.5);
 }
 
-.hr {
-  height: 1px;
-  background-color: black;
-  width: 5%;
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
 }
 
 form {
@@ -148,6 +142,7 @@ form input {
   flex-direction: column;
   align-items: center;
   margin-top: 80px;
+  padding: 0 15px;
 }
 
 .contact-container ul li {
@@ -166,12 +161,13 @@ form input {
 
 .footer {
   border: 3px solid black;
-  padding: 5px;
+  padding: 5px 5px;
   height: 50px;
 }
 
 .footer p {
   font-weight: bold;
+  margin-top: 0;
 }
 
 .footer a {
@@ -181,6 +177,7 @@ form input {
 @media screen and (min-width: 768px) {
   .header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border: 3px solid black;
@@ -213,5 +210,111 @@ form input {
   header ul li {
     cursor: pointer;
     list-style: none;
+  }
+
+  #date {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .booklist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .booklist-container ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+  }
+
+  .booklist-border {
+    border: 3px solid black;
+  }
+
+  .list-border {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 0;
+  }
+
+  .book-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+  }
+
+  li button {
+    border: 3px solid black;
+    box-shadow: 3px 3px;
+    margin-top: 5px;
+  }
+
+  ul li:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.5);
+  }
+
+  .book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-books {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+  }
+
+  #add-book {
+    border: 3px solid black;
+    box-shadow: 3px 3px;
+  }
+
+  form input {
+    border: 3px solid black;
+    width: 180px;
+  }
+
+  .error-msg {
+    color: red;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .contact-container ul li {
+    list-style: disc;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .hide {
+    display: none;
   }
 }
